@@ -20,6 +20,10 @@ class Calculator:
     def square_root(self, x):
         return math.sqrt(x)
     
+    #Added sqrt function again for sqrt feature branch
+    def sqrt(self,x):
+        return math.sqrt(x)
+    
 if __name__ == "__main__": 
     calculator = Calculator()
     num1 = 16
@@ -33,3 +37,7 @@ if __name__ == "__main__":
     #TODO: Uncomment and test the square root feature. 
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+    #Added the below line for sqrt feature branch
+    num4 = 9
+    print(f"The square root of {num4} = {calculator.sqrt(num4)}")
