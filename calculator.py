@@ -10,12 +10,18 @@ class Calculator:
     def multiply(self, a, b):
         return a * b
 
-    def divide(self, a, b): 
+    def divide(self, a, b):
+        if b == 0:
+            raise ValueError("Cannot divide by zero.") 
         return a / b
     
     # TODO: Implement the following function to calculate the square root of a number.
 
     def square_root(self, x):
+        return math.sqrt(x)
+    
+    #Added sqrt function again for sqrt feature branch
+    def sqrt(self,x):
         return math.sqrt(x)
     
 if __name__ == "__main__": 
@@ -31,3 +37,7 @@ if __name__ == "__main__":
     #TODO: Uncomment and test the square root feature. 
     num3 = 25
     print(f"The square root of {num3} = {calculator.square_root(num3)}")
+
+    #Added the below line for sqrt feature branch
+    num4 = 9
+    print(f"The square root of {num4} = {calculator.sqrt(num4)}")
