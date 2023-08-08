@@ -187,6 +187,7 @@ Stash Changes for Circle Area Feature:
 Before committing the changes, stash them using git stash to save the incomplete feature implementation.
 ```
 git stash
+```
 The File should not appear while checking the git status
 ```
 git status
