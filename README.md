@@ -1,6 +1,6 @@
 # git_assignment_HeroVired
 
-Question 1 :-
+# Question 1 :-
 
 Presented here is a Python application called "CalculatorPlus.py." This application is designed to perform basic arithmetic operations, including addition, subtraction, multiplication, and division. An additional feature has been integrated, allowing for the calculation of square roots.
 
@@ -9,7 +9,9 @@ Initiate by creating a Git repository named "git_assignment_HeroVired" and proce
 
 Clone using the repository's SSH link:
 
-"git clone <GitHub repo SSH link>"
+``` 
+git clone <GitHub repo SSH link>
+```
 
 Create a new branch, "dev," for making code modifications within this branch.
 
