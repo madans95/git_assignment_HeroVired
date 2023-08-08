@@ -170,62 +170,90 @@ git clone < ssh repo link>
 # Question 3:-
  
 Create new branch named "geometry-calculator"
+```
+git branch -b geometry-calculator
+```
 
 Create a new file "geometry-calculator.py" and add initial code to it.
 
 Created a new branch named "feature/circle-area" from "geometry-calculator" to work on the circle-area feature.
-"git checkout -b feature/circle-area"
-Add Circle Area Feature in the "feature/circle-area" branch
-b. Stash Changes for Circle Area Feature:
+```
+git checkout -b feature/circle-area
+```
+Add Circle Area Feature in the "feature/circle-area" branch.
+
+Stash Changes for Circle Area Feature:
 
 Before committing the changes, stash them using git stash to save the incomplete feature implementation.
-
-"git stash "
+```
+git stash
 The File should not appear while checking the git status
-"git status"
-c. Create a New Branch for Rectangle Area Feature:
+```
+git status
+```
+Create a New Branch for Rectangle Area Feature:
 
 Create a new branch named "feature/rectangle-area" from "geometry-calculator" to work on the rectangle area.
-
-"git checkout -b feature/rectangle-area"
+```
+git checkout -b feature/rectangle-area
+```
 
 Add code for Rectangle Area Feature in the "feature/rectangle-area" branch & Stash it.
-
-"git stash"
-
+```
+git stash
+```
 The File should not appear while checking the git status
-"git status"
-
-e. Switch Back to Circle Area Branch commit and Push Circle Area Feature:
+```
+git status
+```
+Switch Back to Circle Area Branch commit and Push Circle Area Feature:
 
 Switch back to the "feature/circle-area" branch to continue working on the circle-area feature.
-"git checkout feature/circle-area"
+```
+git checkout feature/circle-area
+```
 View all the stash presents.
-“git stash list”
+```
+git stash list
+```
 Retrieve the stash for circle-area code
-"git stash apply {stash-id of the stash made for circle-area code}"
+```
+git stash apply {stash-id of the stash made for circle-area code}
+```
 Complete the circle area feature implementation and save the changes.
-“git add *”
-“git commit -m ”commit circle-area code”
-g. Switch Back to Rectangle Area Branch & commit and Push Rectangle Area Feature:
+```
+git add *
+git commit -m ”commit circle-area code
+```
+Switch Back to Rectangle Area Branch & commit and Push Rectangle Area Feature:
 
 Switch back to the "feature/rectangle-area" branch to continue working on the rectangle area feature.
-"git checkout feature/rectangle-area "
+```
+git checkout feature/rectangle-area
+```
 Retrieve the stashed changes
-“git stash list”
-"git stash apply {stash-id of the stash made for rectangle-area code}"
+```
+git stash list
+git stash apply {stash-id of the stash made for rectangle-area code}
+```
 Complete the rectangle area feature implementation and save the changes.
-“git add *”
-“git commit -m ”commit rectangle-area code”
-i. Create Pull Requests:
+```
+git add *
+git commit -m ”commit rectangle-area code
+```
+Create Pull Requests:
 
 Merge two branch "feature/rectangle-area" and "feature/circle-area" to "geometry-calculator"
+```
+git checkout geometry-calculator
+git merge feature/rectangle-area
+git merge feature/circle-area
+```
 
 Create a pull request to the ‘dev’ branch.
-*Fromm the git hub create a pull request from "geometry-calculator" to "dev" Branch.
+Fromm the git hub create a pull request from "geometry-calculator" to "dev" Branch.
 
-j. Review and Merge
-
+Review and Merge
 Have another team member or reviewer review your pull requests.
 After receiving approval, merge both pull requests into the main branch.
 
