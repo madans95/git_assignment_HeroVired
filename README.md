@@ -60,97 +60,114 @@ Release the initial version of the code.
 
 ![image](https://github.com/madans95/git_assignment_HeroVired/assets/49802479/fa8ad262-5aac-4fb1-87a4-c7f0fc9436eb)
 
-Create a new branch named "feature/sqrt" and switch to it.
+Create a new branch named "feature_sqrt" and switch to it.
 
 Create the branch:
-
+```
 git branch feature_sqrt
-
+```
 Switch to the newly created branch:
-
-git checkout feature/sqrt
-
-Integrate the 'sqrt' code into the "feature/sqrt" branch and temporarily stash it.
+```
+git checkout feature_sqrt
+```
+Integrate the 'sqrt' code into the "feature_sqrt" branch and temporarily stash it.
 
 Stash the changes:
-
+```
 git stash
+```
 
 Due to a critical bug reported in the main branch, switch back to the "dev" branch for bug fixing.
 
 i. Implement a fix for the "divide function" code in the "CalculatorPlus.py" file within the "dev" branch.
 
 ii. Stage and commit the changes to the "CalculatorPlus.py" file in the "dev" branch. Push the corrected code to the remote "Dev Origin.
+```
+git checkout dev
 
-“git checkout dev”
+“git add CalculatorPlus.py”
 
-“git merge feature/sqrt”
+“git commit -m "message" 
 
-“git log”
+“git log”      -- to check the newly added commit info
 
 “git push”  -- the origin/dev will be moved to the latest commit or the same as local HEAD in Git Log.
+```
 
 Create a "Pull Request" from the remote repository to merge code from "dev" into "main," allowing collaborators to review the changes.
 
 After the Pull Request is reviewed and approved by collaborators, return to the "feature/sqrt" branch and retrieve the temporarily stashed code for the "Square" function.
 
 Retrieve the stashed changes:
-
+```
 git stash pop
-
+```
 Proceed to merge the code into the "dev" branch and then push it to the remote "Dev Origin."
 
 Switch to the "dev" branch:
-
+```
 git checkout dev
-
+```
 Merge the changes from the "feature/sqrt" branch:
-
+```
 git merge feature/sqrt
-
+```
 Push the changes:
-
+```
 git push
-
+```
 Test the functionality to confirm smooth operation. Initiate a Pull Request from the "Dev Origin" to the "Main Origin" to reflect all changes in the main branch.
 
 ii. Create a 'version 2' release using GitHub.
 
 ![image](https://github.com/madans95/git_assignment_HeroVired/assets/49802479/0b49a72a-3b88-4dc8-8005-7cd77d5ec025)
 
-Question 2:-
+# Question 2:-
 
 Uploaded a 200 MB ".pdf" file using Git LFS
 
 Install Git LFS.
-“git lfs install”
+```
+git lfs install
+```
 
-Create a Branch LFS and checkout into it. "git branch lfs"
-"git checkout lfs"
-"git status"
+Create a Branch LFS and checkout into it. 
+```
+git branch lfs
+git checkout lfs
+git status
+```
 
 Keep a pdf file of more than 200 MB in the directory git is initialized
 & Track the large file(pdf in this case).
+```
 git lfs track "*.pdf"
-"git status"
+git status
+```
 
 Add the files & Commit it.
-“git add .gitattributes”
-“git add 200MB PDF File-lfs.pdf”
+```
+git add .gitattributes
+git add 200MB PDF File-lfs.pdf
 git commit -m "Track the Large 200MB file via Git LFS"
+```
 
 To View all the LFS files getting tracks.
-"git lfs track"
+```
+git lfs track
+```
 
 Push the commit to the origin lfs.
-"git push -u origin lfs"
+```
+git push -u origin lfs
+```
 
-Clone the Repo in any other folder to Check if the Large File is getting downloaded properly
-"git clone < ssh repo link>"
+Clone the Repo in any other folder to Check if the Large File is getting downloaded properly.
+```
+git clone < ssh repo link>
+```
 
-
-
-Question 3:-
+# Question 3:-
  
 Create new branch named "geometry-calculator"
 
