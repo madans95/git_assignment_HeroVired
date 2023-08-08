@@ -13,41 +13,48 @@ Clone using the repository's SSH link:
 git clone <GitHub repo SSH link>
 ```
 
-Create a new branch, "dev," for making code modifications within this branch.
+Create a new branch, "dev" for making code modifications within this branch.
 
 Create and switch to the "dev" branch:
-
+```
 git checkout -b dev
+```
 
 Develop a Python file named "CalculatorPlus" and introduce the basic arithmetic calculations.
 
 Stage the newly created file in the "dev" branch and commit the changes.
 
 Check the status of staged files:
-
+```
 git status
+```
 
 Add the file to the staging area:
-
+```
 git add CalculatorPlus.py
+```
 
 Commit the staged changes with a descriptive message:
-
+```
 git commit -m "Add commit message here"
+```
 
 Merge the recent "dev" branch commit into the "main" branch.
 
 Switch to the "main" branch:
-
+```
 git checkout main
+```
 
 Merge recent "dev" commits into the "main" branch:
-
+```
 git merge dev
+```
 
 Push changes from local "main" to "origin/main":
-
+```
 git push
+```
 
 Release the initial version of the code.
 
