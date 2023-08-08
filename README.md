@@ -109,6 +109,37 @@ ii. Create a 'version 2' release using GitHub.
 
 ![image](https://github.com/madans95/git_assignment_HeroVired/assets/49802479/0b49a72a-3b88-4dc8-8005-7cd77d5ec025)
 
+Question 2:-
+
+Uploaded a 200 MB ".pdf" file using Git LFS
+
+Install Git LFS.
+“git lfs install”
+
+Create a Branch LFS and checkout into it. "git branch lfs"
+"git checkout lfs"
+"git status"
+
+Keep a pdf file of more than 200 MB in the directory git is initialized
+& Track the large file(pdf in this case).
+git lfs track "*.pdf"
+"git status"
+
+Add the files & Commit it.
+“git add .gitattributes”
+“git add 200MB PDF File-lfs.pdf”
+git commit -m "Track the Large 200MB file via Git LFS"
+
+To View all the LFS files getting tracks.
+"git lfs track"
+
+Push the commit to the origin lfs.
+"git push -u origin lfs"
+
+Clone the Repo in any other folder to Check if the Large File is getting downloaded properly
+"git clone < ssh repo link>"
+
+
 
 Question 3:-
  
