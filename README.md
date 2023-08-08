@@ -71,9 +71,15 @@ Due to a critical bug reported in the main branch, switch back to the "dev" bran
 
 i. Implement a fix for the "divide function" code in the "CalculatorPlus.py" file within the "dev" branch.
 
-ii. Stage and commit the changes to the "CalculatorPlus.py" file in the "dev" branch. Push the corrected code to the remote "Dev Origin."
+ii. Stage and commit the changes to the "CalculatorPlus.py" file in the "dev" branch. Push the corrected code to the remote "Dev Origin.
 
-*******edit*********
+“git checkout dev”
+
+“git merge feature/sqrt”
+
+“git log”
+
+“git push”  -- the origin/dev will be moved to the latest commit or the same as local HEAD in Git Log.
 
 Create a "Pull Request" from the remote repository to merge code from "dev" into "main," allowing collaborators to review the changes.
 
